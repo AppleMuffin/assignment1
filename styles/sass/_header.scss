@@ -11,6 +11,17 @@ body {
   line-height: 29px;
 }
 
+button {
+  background-color: #9200FF;
+  font-family: 'Iceberg', sans-serif;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+
+input {
+  border: 0;
+}
 
 // typography
 h1 { 
@@ -31,6 +42,12 @@ h2 {
   text-transform: uppercase;
   line-height: normal;
   margin: 0;
+  p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 35px;
+      line-height: 29px;
+      margin: 0;
+  }
 }
 
 h3 {
@@ -52,7 +69,7 @@ a {
 header {
   background-image: url(../thunder-force-stadium/assets/image-1.png);
   background-size: cover;
-  height: 55vh;
+  height: 750px;
   .headerContainer {
     display: flex;
     justify-content: center;
@@ -92,7 +109,7 @@ header {
 
 .performingLineUp, .experiences {
   background-color: #0F0632;
-  height: 50vh;
+  height: 500px;
   display: flex;
     .textContainer{ 
       width: 50%;
@@ -109,19 +126,22 @@ header {
         max-height: 100%;
         height: auto;
         display: inline-block;
-        object-fit: fill;
+        object-fit: contain;
 
       }
     }
 }
 
 .tickets {
-  background-color: #0F0632;
-  height: 55vh;
+  background-color: #08080B;
+  height: 400px;
+  display: flex;
+  align-items: center;
     .wrapper {
       display: flex;
-      height: 80%;
+      align-items: center;
       .imgContainer {
+        margin: 20px;
         align-self: center;
           img {
             width: 100%;
@@ -131,13 +151,13 @@ header {
           }
       }
       .textContainer {
-        border: 1px solid red;
+        height: 80%;
       }
     }
 }
 
 .info {
-  background-color: #9200FF;
+  background-color: #3D0369;
   height: 40vh;
   display: flex;
   justify-content: center;
@@ -148,12 +168,14 @@ header {
       display: flex;
       justify-content: space-evenly;
       .infoContainer {
+        margin: 10px 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         i {
           font-size: xx-large;
         }
+        // white-space: nowrap;
         
       }
     }
@@ -162,16 +184,72 @@ header {
 
 .gallery {
     background-color: #0F0632;
+    height: 50vh;
   .wrapper {
     h2 {
+      padding: 50px 25px;
       text-align: center;
     }
     .imgContainer {
       display: flex;
+      li {
+        margin: 20px;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
     }
   }
 }
 
+.bottomNav {
+  height: 10vh;
+  background-color: #3D0369;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .navBar {
+    width: 40%;
+    ul {
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.companyInfo {
+  background-color: #3D0369;
+  display: flex;
+  height: 25vh;
+  justify-content: space-evenly;
+  .contact, .subscribe{
+    padding: 20px 50px;
+    width: 50%;
+    p {
+      margin: 0;
+    }
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+      button {
+        padding: 3x 10px;
+      }
+
+
+  }
+}
+
+footer {
+  background-color: #0F0632;
+  color: white;
+  text-align: center;
+  p {
+    margin: 0;
+  }
+}
 
 
 // header {

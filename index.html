@@ -138,15 +138,20 @@
     <section class="gallery">
       <div class="wrapper">
         <h2>The Gram</h2>
-        <div class="imgContainer">
-          <img src="./thunder-force-stadium/assets/image-2@2x.png" alt="a concert stadium, birds-eye view">
-        </div>
-        <div class="imgContainer">
-          <img src="./thunder-force-stadium/assets/gallery-image-2@2x.png" alt="A band on stage, with stage fog in the background">
-        </div>
-        <div class="imgContainer">
-          <img src="./thunder-force-stadium/assets/gallery-image-3@2x.png" alt="A photo of sushi on a wooden plate">
-        </div>
+
+          <ul class="imgContainer">
+            <li>
+              <img src="./thunder-force-stadium/assets/image-2@2x.png" alt="a concert stadium, birds-eye view">
+            </li>
+            <li>
+              <img src="./thunder-force-stadium/assets/gallery-image-2@2x.png"
+                alt="A band on stage, with stage fog in the background">
+            </li>
+            <li>
+              <img src="./thunder-force-stadium/assets/gallery-image-3@2x.png" alt="A photo of sushi on a wooden plate">
+            </li>
+          </ul>
+
       </div>
     </section>
 
@@ -165,21 +170,33 @@
 
     <section class="companyInfo">
       
-      <div>
-        <h3>Contact</h3>
+      <div class="contact">
+        <h2>Contact</h2>
         <p>info@email.com | 123 - 456 - 7890</p>
         <p>123 some road, Toronto, ON</p>
         <p>A5A 5A5, Canada</p>
       </div>
 
-      <div>
-        <h3>Stay Updated</h3>
-        <p>Subscribe to our newsletter to stay updated</p>
-        <div class="subscribe">
-          <input type="text">
-          <button>Subscribe</button>
-        </div>
+      <div class="subscribe">
+        <h2>Stay Updated</h2>
+        <form action="">
+          <label for="subscribe">Subscribe to our newsletter to stay updated.</label>
+          <div class="inputSubscribe">
+            <input type="email" id="subscribe" placeholder="email address" max-length="50" size="40"><button>Subscribe</button>
+          </div>
+        </form>
       </div>
+<!-- 
+      <div class="subscribe">
+        <h2>Stay Updated</h2>
+        <div class="subscribeInput">
+          <form action="">
+            <label for="emailSub">Subscribe to our newsletter to stay updated.</label>
+            <input type="email" placeholder="email address" row="10" col="30">
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div> -->
       
     </section>
 

@@ -266,6 +266,18 @@ body {
   line-height: 29px;
 }
 
+button {
+  background-color: #9200FF;
+  font-family: "Iceberg", sans-serif;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+
+input {
+  border: 0;
+}
+
 h1 {
   font-family: "Iceberg", sans-serif;
   font-size: 80px;
@@ -283,6 +295,12 @@ h2 {
   font-size: 52px;
   text-transform: uppercase;
   line-height: normal;
+  margin: 0;
+}
+h2 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  line-height: 29px;
   margin: 0;
 }
 
@@ -305,7 +323,7 @@ a {
 header {
   background-image: url(../thunder-force-stadium/assets/image-1.png);
   background-size: cover;
-  height: 55vh;
+  height: 750px;
 }
 header .headerContainer {
   display: -webkit-box;
@@ -370,7 +388,7 @@ header .headerContainer .socialLinks {
 
 .performingLineUp, .experiences {
   background-color: #0F0632;
-  height: 50vh;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,21 +409,30 @@ header .headerContainer .socialLinks {
   max-height: 100%;
   height: auto;
   display: inline-block;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .tickets {
-  background-color: #0F0632;
-  height: 55vh;
+  background-color: #08080B;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .tickets .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .tickets .wrapper .imgContainer {
+  margin: 20px;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -414,11 +441,11 @@ header .headerContainer .socialLinks {
   max-height: 100%;
 }
 .tickets .wrapper .textContainer {
-  border: 1px solid red;
+  height: 80%;
 }
 
 .info {
-  background-color: #9200FF;
+  background-color: #3D0369;
   height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,6 +468,7 @@ header .headerContainer .socialLinks {
           justify-content: space-evenly;
 }
 .info ul .infoContainer {
+  margin: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,12 +486,85 @@ header .headerContainer .socialLinks {
 
 .gallery {
   background-color: #0F0632;
+  height: 50vh;
 }
 .gallery .wrapper h2 {
+  padding: 50px 25px;
   text-align: center;
 }
 .gallery .wrapper .imgContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.gallery .wrapper .imgContainer li {
+  margin: 20px;
+}
+.gallery .wrapper .imgContainer li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bottomNav {
+  height: 10vh;
+  background-color: #3D0369;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bottomNav .navBar {
+  width: 40%;
+}
+.bottomNav .navBar ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.companyInfo {
+  background-color: #3D0369;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.companyInfo .contact, .companyInfo .subscribe {
+  padding: 20px 50px;
+  width: 50%;
+}
+.companyInfo .contact p, .companyInfo .subscribe p {
+  margin: 0;
+}
+.companyInfo .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.companyInfo .subscribe button {
+  padding: 3x 10px;
+}
+
+footer {
+  background-color: #0F0632;
+  color: white;
+  text-align: center;
+}
+footer p {
+  margin: 0;
 }
