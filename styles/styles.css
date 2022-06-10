@@ -260,36 +260,62 @@ template {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   color: white;
+  line-height: 29px;
+}
+
+h1 {
+  font-family: "Iceberg", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  line-height: 80px;
+}
+h1 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  line-height: 29px;
+}
+
+h2 {
+  font-family: "Iceberg", sans-serif;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: normal;
+  margin: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
 }
 
 li {
   list-style: none;
+  color: white;
 }
 
-button {
-  background-color: #9200FF;
-  border: 0;
+a {
+  text-decoration: none;
   color: white;
-  padding: 10px 20px;
-  font-size: 25px;
-  line-height: 29px;
-  font-family: "Iceberg", sans-serif;
 }
 
 header {
   background-image: url(../thunder-force-stadium/assets/image-1.png);
   background-size: cover;
-  height: 100vh;
+  height: 55vh;
 }
 header .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-header .headerContainer .navTitleContainer {
+header .headerContainer .navTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,17 +324,7 @@ header .headerContainer .navTitleContainer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-header .headerContainer .navTitleContainer .title h1 {
-  font-family: "Iceberg", sans-serif;
-  color: white;
-  text-align: center;
-  font-size: 80px;
-  line-height: 80px;
-}
-header .headerContainer .navTitleContainer .title p {
-  text-align: center;
-}
-header .headerContainer .navTitleContainer .navBar ul {
+header .headerContainer .navTitle .navBar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,13 +332,24 @@ header .headerContainer .navTitleContainer .navBar ul {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-header .headerContainer .navTitleContainer .navBar ul li {
-  list-style: none;
+header .headerContainer .navTitle .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 40%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
-header .headerContainer .navTitleContainer .navBar ul li a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
+header .headerContainer .navTitle .title p {
+  background-color: #9200FF;
+  padding: 10px 0px;
+  margin: 0;
+  font-weight: 1500;
 }
 header .headerContainer .socialLinks {
   display: -webkit-box;
@@ -332,68 +359,111 @@ header .headerContainer .socialLinks {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: white solid 1px;
-}
-
-.performingLineUpTest {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.performingLineUpTest .textTest {
-  width: 50%;
-  padding: 100px;
-}
-.performingLineUpTest .imageTest {
-  width: 50%;
+  position: absolute;
+  height: 200px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  right: 15px;
+  top: 15%;
 }
 
 .performingLineUp, .experiences {
   background-color: #0F0632;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.performingLineUp .wrapper, .experiences .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.performingLineUp .wrapper .textContainer, .experiences .wrapper .textContainer {
+.performingLineUp .textContainer, .experiences .textContainer {
   width: 50%;
-  padding: 50px;
+  padding: 50px 25px;
 }
-.performingLineUp .wrapper .imgContainer, .experiences .wrapper .imgContainer {
+.performingLineUp .textContainer a, .experiences .textContainer a {
+  background-color: #9200FF;
+  padding: 10px 15px;
+}
+.performingLineUp .imgContainer, .experiences .imgContainer {
   width: 50%;
 }
-.performingLineUp .wrapper .imgContainer img, .experiences .wrapper .imgContainer img {
+.performingLineUp .imgContainer img, .experiences .imgContainer img {
   width: 100%;
   max-height: 100%;
   height: auto;
   display: inline-block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .tickets {
+  background-color: #0F0632;
+  height: 55vh;
+}
+.tickets .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 80%;
+}
+.tickets .wrapper .imgContainer {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.tickets .wrapper .imgContainer img {
+  width: 100%;
+  max-height: 100%;
+}
+.tickets .wrapper .textContainer {
+  border: 1px solid red;
 }
 
-.textContainer h2 {
-  font-family: "Iceberg", sans-serif;
-  font-size: 52px;
+.info {
+  background-color: #9200FF;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info ul {
+  width: 50%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.info ul .infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info ul .infoContainer i {
+  font-size: xx-large;
 }
 
-.tickets {
-  background-color: #08080B;
-}
-
-footer, .gallery {
+.gallery {
   background-color: #0F0632;
 }
-
-.bottomNav, .companyInfo {
-  background-color: #3D0369;
+.gallery .wrapper h2 {
+  text-align: center;
+}
+.gallery .wrapper .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

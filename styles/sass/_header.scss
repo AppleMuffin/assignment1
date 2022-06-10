@@ -5,143 +5,302 @@
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   color: white;
+  line-height: 29px;
+}
+
+
+// typography
+h1 { 
+  font-family: 'Iceberg', sans-serif;
+  font-size: 80px;
+  text-align: center;
+  line-height: 80px;
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    line-height: 29px;
+  }
+}
+
+h2 {
+  font-family: 'Iceberg', sans-serif;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: normal;
+  margin: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
 }
 
 li {
   list-style: none;
+  color: white;
 }
 
-button {
-  background-color: #9200FF;
-  border: 0;
+a {
+  text-decoration: none;
   color: white;
-  padding: 10px 20px;
-  font-size: 25px;
-  line-height: 29px;
-  font-family: 'Iceberg', sans-serif;
 }
 
 header {
   background-image: url(../thunder-force-stadium/assets/image-1.png);
   background-size: cover;
-  height: 100vh;
-
+  height: 55vh;
   .headerContainer {
-      display: flex;
-
-      .navTitleContainer {
+    display: flex;
+    justify-content: center;
+      .navTitle {
         display: flex;
         flex-direction: column;
-
-        .title {
-          h1 {
-              font-family: 'Iceberg', sans-serif;
-              color: white;
-              text-align: center;
-              font-size: 80px;
-              line-height: 80px;
-            }
-
-          p {
-            text-align: center;
-          }
-
-        }
-
-        .navBar {
-          
-          
-          ul {
+        .navBar ul {
             display: flex;
             justify-content: space-evenly;
-
-            li {
-              list-style: none;
-              a {
-                  text-decoration: none;
-                  color: white;
-                  text-transform: uppercase;
-                  
-              }
-            }
+        }
+        
+        .title {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          max-width: 40%;
+          align-self: center;
+          p {
+            background-color: #9200FF;
+            padding: 10px 0px;
+            margin: 0;
+            font-weight: 1500;
           }
         }
       }
-
-      .socialLinks {
-        display: flex;
-        flex-direction: column;
-        border: white solid 1px;
-      }
+    .socialLinks {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      height: 200px;
+      justify-content: space-evenly;
+      right: 15px;
+      top: 15%;
     }
-}
-
-.performingLineUpTest {
-  display: flex;
-  .textTest {
-    width: 50%;
-    padding: 100px;
-    
-  }
-  .imageTest{
-    width: 50%;
-
   }
 }
 
 .performingLineUp, .experiences {
   background-color: #0F0632;
+  height: 50vh;
   display: flex;
+    .textContainer{ 
+      width: 50%;
+      padding: 50px 25px;
+      a {
+        background-color: #9200FF;
+        padding: 10px 15px;
+      }
+    }
+    .imgContainer {
+      width: 50%;
+      img {
+        width: 100%;
+        max-height: 100%;
+        height: auto;
+        display: inline-block;
+        object-fit: fill;
 
+      }
+    }
+}
+
+.tickets {
+  background-color: #0F0632;
+  height: 55vh;
     .wrapper {
       display: flex;
-
-      .textContainer {
-        width: 50%;
-        padding: 50px;
-      }
+      height: 80%;
       .imgContainer {
-          width: 50%;
-      
+        align-self: center;
           img {
             width: 100%;
             max-height: 100%;
-            height: auto;
-            display: inline-block;
-            object-fit: cover;
-      
+            
+        
           }
+      }
+      .textContainer {
+        border: 1px solid red;
+      }
+    }
+}
+
+.info {
+  background-color: #9200FF;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    ul {
+      width: 50%;
+      margin: 0;
+      display: flex;
+      justify-content: space-evenly;
+      .infoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i {
+          font-size: xx-large;
         }
         
+      }
     }
 
 }
 
-
-.tickets {
-  display: flex;
+.gallery {
+    background-color: #0F0632;
+  .wrapper {
+    h2 {
+      text-align: center;
+    }
+    .imgContainer {
+      display: flex;
+    }
+  }
 }
 
 
 
-.textContainer h2 {
-  font-family: 'Iceberg', sans-serif;
-  font-size: 52px;
-}
+// header {
+//   background-image: url(../thunder-force-stadium/assets/image-1.png);
+//   background-size: cover;
+//   height: 100vh;
 
-.tickets {
-  background-color: #08080B;
-}
-footer, .gallery {
-  background-color: #0F0632;
-}
+//   .headerContainer {
+//       display: flex;
 
-.bottomNav, .companyInfo {
-  background-color: #3D0369;
-}
+//       .navTitleContainer {
+//         display: flex;
+//         flex-direction: column;
+
+//         .title {
+//           h1 {
+//               font-family: 'Iceberg', sans-serif;
+//               color: white;
+//               text-align: center;
+//               font-size: 80px;
+//               line-height: 80px;
+//             }
+
+//           p {
+//             text-align: center;
+//           }
+
+//         }
+
+//         .navBar {
+          
+          
+//           ul {
+//             display: flex;
+//             justify-content: space-evenly;
+
+//             li {
+//               list-style: none;
+//               a {
+//                   text-decoration: none;
+//                   color: white;
+//                   text-transform: uppercase;
+                  
+//               }
+//             }
+//           }
+//         }
+//       }
+
+//       .socialLinks {
+//         display: flex;
+//         flex-direction: column;
+//         border: white solid 1px;
+//       }
+//     }
+// }
+
+// .performingLineUpTest {
+//   background-color: #0F0632;
+//   display: flex;
+//   .textTest {
+//     width: 50%;
+//     padding: 100px;
+    
+
+//   }
+//   .imageTest{
+//     width: 50%;
+//     img {
+//         width: 100%;
+//         max-height: 100%;
+//         height: auto;
+//         display: inline-block;
+//         object-fit: cover;
+    
+//       }
+//   }
+// }
+
+// .performingLineUp, .experiences {
+//   background-color: #0F0632;
+//   display: flex;
+
+//     .wrapper {
+//       display: flex;
+
+//       .textContainer {
+//         width: 50%;
+//         padding: 50px;
+//       }
+//       .imgContainer {
+//           width: 50%;
+      
+//           img {
+//             width: 100%;
+//             max-height: 100%;
+//             height: auto;
+//             display: inline-block;
+//             object-fit: cover;
+      
+//           }
+//         }
+        
+//     }
+
+// }
+
+
+// .tickets {
+//   display: flex;
+// }
+
+
+
+// .textContainer h2 {
+//   font-family: 'Iceberg', sans-serif;
+//   font-size: 52px;
+// }
+
+// .tickets {
+//   background-color: #08080B;
+// }
+// footer, .gallery {
+//   background-color: #0F0632;
+// }
+
+// .bottomNav, .companyInfo {
+//   background-color: #3D0369;
+// }
 
 
 
