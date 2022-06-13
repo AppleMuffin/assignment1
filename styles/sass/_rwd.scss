@@ -45,4 +45,11 @@
     margin: 0;
     width: auto;
   }
+
+  .companyInfo {
+    flex-direction: column;
+    .companyInfo, .subscribe {
+      text-align: center;
+    }
+  }
 }

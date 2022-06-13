@@ -1,14 +1,12 @@
 .companyInfo {
   background-color: #3D0369;
   display: flex;
-  height: 25vh;
   justify-content: space-evenly;
 
   .contact,
   .subscribe {
     padding: 20px 50px;
-    width: 50%;
-
+    flex-basis: 50%;
     p {
       margin: 0;
     }
