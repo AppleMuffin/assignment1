@@ -253,77 +253,9 @@ template {
   overflow: hidden;
 }
 
-.wrapper {
-  max-width: 1080px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-body {
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  line-height: 29px;
-}
-
-button {
-  background-color: #9200FF;
-  font-family: "Iceberg", sans-serif;
-  color: white;
-  font-size: 20px;
-  border: none;
-}
-
-input {
-  border: 0;
-}
-
-h1 {
-  font-family: "Iceberg", sans-serif;
-  font-size: 80px;
-  text-align: center;
-  line-height: 80px;
-}
-h1 p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 35px;
-  line-height: 29px;
-}
-
-h2 {
-  font-family: "Iceberg", sans-serif;
-  font-size: 52px;
-  text-transform: uppercase;
-  line-height: normal;
-  margin: 0;
-}
-h2 p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 35px;
-  line-height: 29px;
-  margin: 0;
-}
-
-h3 {
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-}
-
-li {
-  list-style: none;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
 header {
   background-image: url(../thunder-force-stadium/assets/image-1.png);
   background-size: cover;
-  height: 750px;
 }
 header .headerContainer {
   display: -webkit-box;
@@ -367,7 +299,6 @@ header .headerContainer .navTitle .title p {
   background-color: #9200FF;
   padding: 10px 0px;
   margin: 0;
-  font-weight: 1500;
 }
 header .headerContainer .socialLinks {
   display: -webkit-box;
@@ -378,7 +309,6 @@ header .headerContainer .socialLinks {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  height: 200px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -386,36 +316,68 @@ header .headerContainer .socialLinks {
   top: 15%;
 }
 
-.performingLineUp, .experiences {
+.bottomNav {
+  height: 10vh;
+  background-color: #3D0369;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bottomNav .navBar {
+  width: 40%;
+}
+.bottomNav .navBar ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.bottomNav .navBar ul li {
+  margin: 10px 10px;
+}
+
+.performingLineUp,
+.experiences {
   background-color: #0F0632;
-  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.performingLineUp .textContainer, .experiences .textContainer {
-  width: 50%;
-  padding: 50px 25px;
+.performingLineUp .textContainer,
+.experiences .textContainer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 100px 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
-.performingLineUp .textContainer a, .experiences .textContainer a {
+.performingLineUp .textContainer a,
+.experiences .textContainer a {
   background-color: #9200FF;
   padding: 10px 15px;
 }
-.performingLineUp .imgContainer, .experiences .imgContainer {
-  width: 50%;
+.performingLineUp .imgContainer,
+.experiences .imgContainer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
-.performingLineUp .imgContainer img, .experiences .imgContainer img {
+.performingLineUp .imgContainer img,
+.experiences .imgContainer img {
   width: 100%;
   max-height: 100%;
   height: auto;
-  display: inline-block;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .tickets {
   background-color: #08080B;
-  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,10 +405,13 @@ header .headerContainer .socialLinks {
 .tickets .wrapper .textContainer {
   height: 80%;
 }
+.tickets .wrapper .textContainer a {
+  background-color: #9200FF;
+  padding: 10px 15px;
+}
 
 .info {
   background-color: #3D0369;
-  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,16 +451,17 @@ header .headerContainer .socialLinks {
 
 .gallery {
   background-color: #0F0632;
-  height: 50vh;
 }
 .gallery .wrapper h2 {
   padding: 50px 25px;
   text-align: center;
+  margin: 0;
 }
 .gallery .wrapper .imgContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
 }
 .gallery .wrapper .imgContainer li {
   margin: 20px;
@@ -503,31 +469,6 @@ header .headerContainer .socialLinks {
 .gallery .wrapper .imgContainer li img {
   max-width: 100%;
   max-height: 100%;
-}
-
-.bottomNav {
-  height: 10vh;
-  background-color: #3D0369;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.bottomNav .navBar {
-  width: 40%;
-}
-.bottomNav .navBar ul {
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .companyInfo {
@@ -540,11 +481,13 @@ header .headerContainer .socialLinks {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-.companyInfo .contact, .companyInfo .subscribe {
+.companyInfo .contact,
+.companyInfo .subscribe {
   padding: 20px 50px;
   width: 50%;
 }
-.companyInfo .contact p, .companyInfo .subscribe p {
+.companyInfo .contact p,
+.companyInfo .subscribe p {
   margin: 0;
 }
 .companyInfo .subscribe {
@@ -561,10 +504,69 @@ header .headerContainer .socialLinks {
 }
 
 footer {
+  padding: 10px 0;
   background-color: #0F0632;
   color: white;
   text-align: center;
 }
 footer p {
   margin: 0;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 125%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  line-height: 29px;
+}
+
+button {
+  background-color: #9200FF;
+  font-family: "Iceberg", sans-serif;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+input {
+  border: 0;
+}
+
+li {
+  list-style: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1, h2 {
+  font-family: "Iceberg", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 4rem;
+}
+h1 p, h2 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.45rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
 }

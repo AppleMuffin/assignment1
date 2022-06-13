@@ -1,0 +1,28 @@
+// gallery styling
+
+.gallery {
+  background-color: #0F0632;
+
+  .wrapper {
+    h2 {
+      padding: 50px 25px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .imgContainer {
+      display: flex;
+      margin: 0;
+
+      li {
+        margin: 20px;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}
+// end gallery styling

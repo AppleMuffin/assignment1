@@ -1,0 +1,38 @@
+.companyInfo {
+  background-color: #3D0369;
+  display: flex;
+  height: 25vh;
+  justify-content: space-evenly;
+
+  .contact,
+  .subscribe {
+    padding: 20px 50px;
+    width: 50%;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      padding: 3x 10px;
+    }
+
+
+  }
+}
+
+footer {
+  padding: 10px 0;
+  background-color: #0F0632;
+  color: white;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}

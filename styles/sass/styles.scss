@@ -255,3 +255,67 @@ template {
 // #endregion
 
 @import 'header';
+@import 'sections';
+@import 'gallery';
+@import 'infoAndFooter';
+
+// base styles
+
+.wrapper {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 125%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  line-height: 29px;
+}
+
+button {
+  background-color: #9200FF;
+  font-family: 'Iceberg', sans-serif;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+input {
+  border: 0;
+}
+
+li {
+  list-style: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+// typography
+h1, h2 {
+  font-family: 'Iceberg', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 4rem;
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.45rem;
+  }
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}

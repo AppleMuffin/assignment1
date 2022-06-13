@@ -1,0 +1,86 @@
+// section styling
+
+.performingLineUp,
+.experiences {
+  background-color: #0F0632;
+  display: flex;
+
+  .textContainer {
+    flex-basis: 50%;
+    padding: 100px 50px;
+    align-self: center;
+
+    a {
+      background-color: #9200FF;
+      padding: 10px 15px;
+    }
+  }
+
+  .imgContainer {
+    flex-basis: 50%;
+
+    img {
+      width: 100%;
+      max-height: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+.tickets {
+  background-color: #08080B;
+  display: flex;
+  align-items: center;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      .imgContainer {
+        margin: 20px;
+        align-self: center;
+          img {
+            width: 100%;
+            max-height: 100%;
+            
+        
+          }
+      }
+      .textContainer {
+        height: 80%;
+        a {
+          background-color: #9200FF;
+          padding: 10px 15px;
+        }
+      }
+    }
+}
+
+.info {
+  background-color: #3D0369;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    .infoContainer {
+      margin: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      i {
+        font-size: xx-large;
+      }
+
+      // white-space: nowrap;
+
+    }
+  }
+
+}
+// end sections styling
