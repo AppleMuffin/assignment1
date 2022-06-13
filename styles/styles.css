@@ -273,6 +273,7 @@ header .headerContainer .navTitle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 100px;
 }
 header .headerContainer .navTitle .navBar ul {
   display: -webkit-box;
@@ -433,7 +434,7 @@ header .headerContainer .socialLinks {
           justify-content: space-evenly;
 }
 .info ul .infoContainer {
-  margin: 10px 20px;
+  margin: 100px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,6 +445,7 @@ header .headerContainer .socialLinks {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
 }
 .info ul .infoContainer i {
   font-size: xx-large;
@@ -560,6 +562,7 @@ footer p {
   }
   .info ul .infoContainer {
     white-space: nowrap;
+    margin: 10px 10px;
   }
 
   .gallery .wrapper ul.imgContainer {
