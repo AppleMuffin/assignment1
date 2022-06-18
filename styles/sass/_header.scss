@@ -17,7 +17,7 @@ header {
           flex-direction: column;
           text-align: center;
           max-width: 40%;
-          align-self: center;
+          margin: 0 auto;
           p {
             background-color: #9200FF;
             padding: 10px 0px;
@@ -36,22 +36,4 @@ header {
   }
 }
 
-.bottomNav {
-  height: 10vh;
-  background-color: #3D0369;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .navBar {
-    width: 40%;
-    ul {
-      li {
-        margin: 10px 10px;
-      }
-      margin: 0;
-      display: flex;
-      justify-content: space-around;
-    }
-  }
-}
 
